@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:id="@+id/calculEdit"/>
+<!--        android:inputType="number|numberDecimal"-->
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="5"
+            android:columnCount="4">
+            <Button android:text="C--"
+                android:id="@+id/ac"/>
+            <Button android:text="&lt;-"
+                android:id="@+id/back"/>
+            <Button android:text="/"
+                android:id="@+id/delenie"
+                android:onClick="onNumberClick"/>
+            <Button android:text="*"
+                android:id="@+id/ymnoshenie"
+                android:onClick="onNumberClick"/>
+            <Button android:text="7"
+                android:id="@+id/seven"
+                android:onClick="onNumberClick"/>
+            <Button android:text="8"
+                android:id="@+id/eight"
+                android:onClick="onNumberClick"/>
+            <Button android:text="9"
+                android:id="@+id/nine"
+                android:onClick="onNumberClick"/>
+            <Button android:text="-"
+                android:id="@+id/minus"
+                android:onClick="onNumberClick"/>
+            <Button android:text="4"
+                android:id="@+id/four"
+                android:onClick="onNumberClick"/>
+            <Button android:text="5"
+                android:id="@+id/five"
+                android:onClick="onNumberClick"/>
+            <Button android:text="6"
+                android:id="@+id/six"
+                android:onClick="onNumberClick"/>
+            <Button android:text="+"
+                android:id="@+id/plus"
+                android:onClick="onNumberClick"/>
+            <Button android:text="1"
+                android:id="@+id/one"
+                android:onClick="onNumberClick"/>
+            <Button android:text="2"
+                android:id="@+id/two"
+                android:onClick="onNumberClick"/>
+            <Button android:text="3"
+                android:id="@+id/three"
+                android:onClick="onNumberClick"/>
+            <Button android:text="="
+                android:id="@+id/ravno"/>
+            <Button android:text="("
+                android:id="@+id/left_split"
+                android:onClick="onNumberClick"/>
+            <Button android:text=")"
+                android:id="@+id/right_split"
+                android:onClick="onNumberClick"/>
+            <Button android:text="0"
+                android:id="@+id/zero"
+                android:onClick="onNumberClick"/>
+            <Button android:text="."
+                android:id="@+id/point"
+                android:onClick="onNumberClick"/>
+        </GridLayout>
+    </LinearLayout>
+
+</RelativeLayout>
